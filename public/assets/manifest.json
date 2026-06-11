@@ -1,0 +1,422 @@
+{
+  "assets": [
+    {
+      "contentType": "image/png",
+      "id": "ae5a7c787a15d8f5",
+      "kind": "image",
+      "name": "fe9b100e056d201daaa0.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/ae5a7c787a15d8f5.jpg",
+      "url": "https://thb.tildacdn.net/tild3164-3730-4539-b833-356663306534/-/empty/fe9b100e056d201daaa0.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "c050ce55d0573347",
+      "kind": "image",
+      "name": "1be83ec7c312b2e66a71.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/c050ce55d0573347.jpg",
+      "url": "https://thb.tildacdn.net/tild3765-6165-4631-a432-383936306336/-/empty/1be83ec7c312b2e66a71.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "296f491e1f42d46a",
+      "kind": "image",
+      "name": "cbd7efbf41ddb54271af.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/296f491e1f42d46a.jpg",
+      "url": "https://thb.tildacdn.net/tild3739-3133-4436-b536-313739653132/-/empty/cbd7efbf41ddb54271af.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "df396f237c4ae512",
+      "kind": "image",
+      "name": "fd70c331309855caacec.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/df396f237c4ae512.jpg",
+      "url": "https://thb.tildacdn.net/tild3336-6363-4363-b462-306330343939/-/empty/fd70c331309855caacec.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "352634036ee035f0",
+      "kind": "image",
+      "name": "0b221d34a7bea5af08ac.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/352634036ee035f0.jpg",
+      "url": "https://thb.tildacdn.net/tild6336-3439-4466-b332-383265633833/-/empty/0b221d34a7bea5af08ac.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "ac385e36a1be5b92",
+      "kind": "image",
+      "name": "feb970b653de72df570f.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/ac385e36a1be5b92.jpg",
+      "url": "https://thb.tildacdn.net/tild3436-3931-4635-a665-333365626134/-/empty/feb970b653de72df570f.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "598b0a9404406cff",
+      "kind": "image",
+      "name": "3f985b99d3bfbb52bbf7.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/598b0a9404406cff.jpg",
+      "url": "https://thb.tildacdn.net/tild3238-3063-4861-a134-626434323464/-/empty/3f985b99d3bfbb52bbf7.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "15a47d85e2d318cd",
+      "kind": "image",
+      "name": "61a01dd884f0c3b00bd5.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/15a47d85e2d318cd.jpg",
+      "url": "https://thb.tildacdn.net/tild6562-3130-4965-b235-376232326561/-/empty/61a01dd884f0c3b00bd5.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "3ee032a3467ca116",
+      "kind": "image",
+      "name": "romantic-moments-bea.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/3ee032a3467ca116.jpg",
+      "url": "https://thb.tildacdn.net/tild3862-3630-4035-b331-383335383439/-/empty/romantic-moments-bea.jpg"
+    },
+    {
+      "contentType": "image/png",
+      "id": "ae18259c5b5f5a40",
+      "kind": "image",
+      "name": "noroot.png",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/ae18259c5b5f5a40.png",
+      "url": "https://static.tildacdn.net/tild3538-6563-4264-b363-393261666238/noroot.png"
+    },
+    {
+      "contentType": "image/jpeg",
+      "id": "656968f3e3b45951",
+      "kind": "image",
+      "name": "elegant-couple-love-.jpg",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/656968f3e3b45951.jpg",
+      "url": "https://static.tildacdn.net/tild3965-6266-4165-b837-303236623330/elegant-couple-love-.jpg"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "54005a2548fc35fa",
+      "kind": "image",
+      "name": "Untitled_Project_9_3.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/54005a2548fc35fa.webp",
+      "url": "https://optim.tildacdn.net/tild6435-3530-4464-b966-383935316136/-/cover/216x168/center/center/-/format/webp/Untitled_Project_9_3.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "bba8477379cd8323",
+      "kind": "image",
+      "name": "a1ac64fc830eb50d2e69.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/bba8477379cd8323.webp",
+      "url": "https://optim.tildacdn.net/tild3537-6234-4333-b136-346664343536/-/cover/216x198/center/center/-/format/webp/a1ac64fc830eb50d2e69.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "61533e4917f1e8f7",
+      "kind": "image",
+      "name": "Polygon_1_3.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/61533e4917f1e8f7.webp",
+      "url": "https://optim.tildacdn.net/tild3762-3738-4361-b134-333538333135/-/format/webp/Polygon_1_3.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "650bf6de07538078",
+      "kind": "image",
+      "name": "Polygon_4.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/650bf6de07538078.webp",
+      "url": "https://optim.tildacdn.net/tild6338-3733-4431-a363-306634383864/-/format/webp/Polygon_4.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "aa70e350615008f0",
+      "kind": "image",
+      "name": "Polygon_3.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/aa70e350615008f0.webp",
+      "url": "https://optim.tildacdn.net/tild3636-6566-4132-b665-343766326335/-/format/webp/Polygon_3.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "9f3d01dcb3f7dcb5",
+      "kind": "image",
+      "name": "Old_Open_Envelope_PN.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/9f3d01dcb3f7dcb5.webp",
+      "url": "https://optim.tildacdn.net/tild3132-3666-4637-a562-616361623963/-/resize/694x/-/format/webp/Old_Open_Envelope_PN.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "df87b4f1002d8170",
+      "kind": "image",
+      "name": "Untitled_Project_9_2.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/df87b4f1002d8170.webp",
+      "url": "https://optim.tildacdn.net/tild3935-3461-4137-b866-623466636431/-/resize/980x/-/format/webp/Untitled_Project_9_2.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "9623d91d40a26d2e",
+      "kind": "image",
+      "name": "Group_63_2.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/9623d91d40a26d2e.webp",
+      "url": "https://optim.tildacdn.net/tild6439-3462-4163-b432-363239323565/-/resize/980x/-/format/webp/Group_63_2.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "4c3769a741dc3c67",
+      "kind": "image",
+      "name": "Polygon_2_1.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/4c3769a741dc3c67.webp",
+      "url": "https://optim.tildacdn.net/tild6262-6339-4933-b833-343039643037/-/format/webp/Polygon_2_1.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "36d3bb3733dd4cf9",
+      "kind": "image",
+      "name": "Untitled_Project_7.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/36d3bb3733dd4cf9.webp",
+      "url": "https://optim.tildacdn.net/tild6164-3830-4431-b133-666364353937/-/resize/482x/-/format/webp/Untitled_Project_7.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "95a97521e90b9624",
+      "kind": "image",
+      "name": "noroot.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/95a97521e90b9624.webp",
+      "url": "https://optim.tildacdn.net/tild3634-3330-4631-b336-373334613834/-/cover/102x102/center/center/-/format/webp/noroot.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "fd31d7f7885991f3",
+      "kind": "image",
+      "name": "noroot.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/fd31d7f7885991f3.webp",
+      "url": "https://optim.tildacdn.net/tild6439-6164-4833-a235-313361383662/-/format/webp/noroot.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "2fede49446b9f4eb",
+      "kind": "image",
+      "name": "d9723fe4-b0e2-4d4e-a.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/2fede49446b9f4eb.webp",
+      "url": "https://optim.tildacdn.net/tild6539-6164-4935-a236-653733393933/-/cover/60x60/center/center/-/format/webp/d9723fe4-b0e2-4d4e-a.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "1b56607501e72ce3",
+      "kind": "image",
+      "name": "noroot.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/1b56607501e72ce3.webp",
+      "url": "https://optim.tildacdn.net/tild3763-3632-4530-b736-383739313133/-/format/webp/noroot.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "1b056dab56f2b11c",
+      "kind": "image",
+      "name": "8cdb6addd9fcedfeb54b.jpg.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/1b056dab56f2b11c.webp",
+      "url": "https://optim.tildacdn.net/tild3361-3537-4334-b532-323531306235/-/resize/880x/-/format/webp/8cdb6addd9fcedfeb54b.jpg.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "3d407c543cc6389c",
+      "kind": "image",
+      "name": "Group_23_6.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/3d407c543cc6389c.webp",
+      "url": "https://optim.tildacdn.net/tild3164-6534-4234-b037-396637343432/-/resize/180x/-/format/webp/Group_23_6.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "baed29ab8d020945",
+      "kind": "image",
+      "name": "fe849b681b9cfddb0d3b.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/baed29ab8d020945.webp",
+      "url": "https://optim.tildacdn.net/tild3636-6361-4930-b032-303334643635/-/resize/806x/-/format/webp/fe849b681b9cfddb0d3b.png.webp"
+    },
+    {
+      "contentType": "image/webp",
+      "id": "1f72f131f4440035",
+      "kind": "image",
+      "name": "929df5d91510928224dc.png.webp",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/1f72f131f4440035.webp",
+      "url": "https://optim.tildacdn.net/tild6534-6461-4737-a535-383131303433/-/resize/830x/-/format/webp/929df5d91510928224dc.png.webp"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "216d3c1c8f4f111e",
+      "kind": "image",
+      "name": "icon-pause",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/216d3c1c8f4f111e.svg",
+      "url": "inline-svg:216d3c1c8f4f111e"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "eadee0e2ae5739d7",
+      "kind": "image",
+      "name": "icon-play",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/eadee0e2ae5739d7.svg",
+      "url": "inline-svg:eadee0e2ae5739d7"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "2c5fda13071cb068",
+      "kind": "image",
+      "name": "svg-3",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/2c5fda13071cb068.svg",
+      "url": "inline-svg:2c5fda13071cb068"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "36a3f9d7ff9f974c",
+      "kind": "image",
+      "name": "svg-4",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/36a3f9d7ff9f974c.svg",
+      "url": "inline-svg:36a3f9d7ff9f974c"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "b80380c0ae225c99",
+      "kind": "image",
+      "name": "svg-5",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/b80380c0ae225c99.svg",
+      "url": "inline-svg:b80380c0ae225c99"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "95812e3084bfeff4",
+      "kind": "image",
+      "name": "svg-6",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/95812e3084bfeff4.svg",
+      "url": "inline-svg:95812e3084bfeff4"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "07773868aca01426",
+      "kind": "image",
+      "name": "svg-7",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/07773868aca01426.svg",
+      "url": "inline-svg:07773868aca01426"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "96c805a239dfd3c5",
+      "kind": "image",
+      "name": "svg-8",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/96c805a239dfd3c5.svg",
+      "url": "inline-svg:96c805a239dfd3c5"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "id": "ee4a63863695e5c5",
+      "kind": "image",
+      "name": "svg-9",
+      "path": "/var/folders/7n/mh833z6907j_gj0xsnb2gyx40000gn/T/browser-use/assets/e05832c8-ac46-4e2c-a7e5-6a592cdba538/ee4a63863695e5c5.svg",
+      "url": "inline-svg:ee4a63863695e5c5"
+    }
+  ],
+  "failures": [
+    {
+      "contentType": null,
+      "id": "e4fefff22f465ded",
+      "name": "Polygon_3.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild3636-6566-4132-b665-343766326335/-/resize/20x/Polygon_3.png"
+    },
+    {
+      "contentType": null,
+      "id": "91ab5932ca6ba9aa",
+      "name": "Polygon_4.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild6338-3733-4431-a363-306634383864/-/resize/20x/Polygon_4.png"
+    },
+    {
+      "contentType": null,
+      "id": "e7622de2c2f83b41",
+      "name": "Polygon_2_1.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild6262-6339-4933-b833-343039643037/-/resize/20x/Polygon_2_1.png"
+    },
+    {
+      "contentType": null,
+      "id": "3e3380a718253b72",
+      "name": "Polygon_1_3.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild3762-3738-4361-b134-333538333135/-/resize/20x/Polygon_1_3.png"
+    },
+    {
+      "contentType": null,
+      "id": "ec9ed3a03f6fa441",
+      "name": "Untitled_Project_7.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild6164-3830-4431-b133-666364353937/-/resize/20x/Untitled_Project_7.png"
+    },
+    {
+      "contentType": null,
+      "id": "d58a7fe6dd8884c4",
+      "name": "Untitled_Project_9_2.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild3935-3461-4137-b866-623466636431/-/resize/20x/Untitled_Project_9_2.png"
+    },
+    {
+      "contentType": null,
+      "id": "9058fd41a915728c",
+      "name": "Old_Open_Envelope_PN.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild3132-3666-4637-a562-616361623963/-/resize/20x/Old_Open_Envelope_PN.png"
+    },
+    {
+      "contentType": null,
+      "id": "d8818c1dfa77c7ad",
+      "name": "noroot.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild6439-6164-4833-a235-313361383662/-/resize/20x/noroot.png"
+    },
+    {
+      "contentType": null,
+      "id": "47f4f8f4731bbe64",
+      "name": "929df5d91510928224dc.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild6534-6461-4737-a535-383131303433/-/empty/929df5d91510928224dc.png"
+    },
+    {
+      "contentType": null,
+      "id": "1b7be885fec072bb",
+      "name": "8cdb6addd9fcedfeb54b.jpg",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild3361-3537-4334-b532-323531306235/-/resize/20x/8cdb6addd9fcedfeb54b.jpg"
+    },
+    {
+      "contentType": null,
+      "id": "a60457a16b261fbf",
+      "name": "fe849b681b9cfddb0d3b.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild3636-6361-4930-b032-303334643635/-/empty/fe849b681b9cfddb0d3b.png"
+    },
+    {
+      "contentType": null,
+      "id": "fdc07831c93d6db2",
+      "name": "Group_23_6.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild3164-6534-4234-b037-396637343432/-/resize/20x/Group_23_6.png"
+    },
+    {
+      "contentType": null,
+      "id": "4042ccaa696149ab",
+      "name": "Group_63_2.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild6439-3462-4163-b432-363239323565/-/resize/20x/Group_63_2.png"
+    },
+    {
+      "contentType": null,
+      "id": "7fdcb7a2bc44e478",
+      "name": "noroot.png",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://thb.tildacdn.net/tild3763-3632-4530-b736-383739313133/-/resize/20x/noroot.png"
+    },
+    {
+      "contentType": null,
+      "id": "f365d8587bde404a",
+      "name": "Forever%20and%20Ever%20and%20Always%20(The%20Wedding%20Song)%20-%20Ryan%20Mack%20(1).mp3",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://pub-4dc8201144ca418fb604349c73e8c724.r2.dev/Forever%20and%20Ever%20and%20Always%20(The%20Wedding%20Song)%20-%20Ryan%20Mack%20(1).mp3"
+    },
+    {
+      "contentType": null,
+      "id": "77524a8acf2d7e11",
+      "name": "Italian_villa_terrace_202604231419%20(1).MP4",
+      "reason": "Loaded resource fetch failed: Asset bundling failed; page fetch failed: Browser Use encountered an error interacting with this webpage: TypeError: Failed to fetch\n    at Sq (<anonymous>:1:41)\n    at <anonymous>:1:354",
+      "url": "https://pub-4dc8201144ca418fb604349c73e8c724.r2.dev/Italian_villa_terrace_202604231419%20(1).MP4"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <radialGradient id="gold" cx="42%" cy="35%" r="68%">
+      <stop offset="0" stop-color="#ffe9ad"/>
+      <stop offset=".48" stop-color="#e5b762"/>
+      <stop offset=".78" stop-color="#b67931"/>
+      <stop offset="1" stop-color="#7d451b"/>
+    </radialGradient>
+    <radialGradient id="face" cx="38%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#f4d894"/>
+      <stop offset=".7" stop-color="#c88c41"/>
+      <stop offset="1" stop-color="#a76629"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5f3619" flood-opacity=".5"/>
+    </filter>
+  </defs>
+  <path filter="url(#shadow)" fill="url(#gold)" stroke="#8b511f" stroke-width="4"
+    d="M160 20c13 0 24 8 36 11 12 3 26 1 37 7 11 6 17 18 27 26 9 8 23 12 30 22 8 10 8 24 13 36 5 11 16 21 17 34 1 13-9 24-12 36-3 12-1 26-7 37-6 11-18 17-26 27-8 9-12 23-22 30-10 8-24 8-36 13-11 5-21 16-34 17-13 1-24-9-36-12-12-3-26-1-37-7-11-6-17-18-27-26-9-8-23-12-30-22-8-10-8-24-13-36-5-11-16-21-17-34-1-13 9-24 12-36 3-12 1-26 7-37 6-11 18-17 26-27 8-9 12-23 22-30 10-8 24-8 36-13 11-5 21-16 34-17z"/>
+  <circle cx="160" cy="160" r="122" fill="none" stroke="#6f3d18" stroke-width="5"/>
+  <circle cx="160" cy="160" r="112" fill="url(#face)" stroke="#f4d58e" stroke-width="3"/>
+  <circle cx="160" cy="160" r="100" fill="none" stroke="#7c471e" stroke-width="2"/>
+  <g fill="#6b3718">
+    <text x="160" y="120" text-anchor="middle" font-family="'Times New Roman',serif" font-size="32">بِسْمِ اللَّهِ</text>
+    <text x="160" y="161" text-anchor="middle" font-family="'Times New Roman',serif" font-size="34">الرَّحْمَنِ</text>
+    <text x="160" y="202" text-anchor="middle" font-family="'Times New Roman',serif" font-size="36">الرَّحِيمِ</text>
+    <text x="160" y="76" text-anchor="middle" font-size="20">✦</text>
+    <text x="160" y="254" text-anchor="middle" font-size="20">✦</text>
+    <text x="66" y="166" text-anchor="middle" font-size="18">❖</text>
+    <text x="254" y="166" text-anchor="middle" font-size="18">❖</text>
+  </g>
+</svg>

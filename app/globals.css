@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Imperial+Script&display=swap");
+:root { --rose:#eed1d0; --rose-light:#f8e5e3; --brown:#704941; --gold:#a87843; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--brown); background:#ead3d0; font-family:"Cormorant Garamond", Georgia, serif; overflow-x:hidden; }
+body.locked { overflow:hidden; }
+button { font:inherit; }
+.opening { position:fixed; inset:0; z-index:100; display:grid; place-items:center; overflow:hidden; background:transparent; transition:opacity .45s 1.45s,visibility 0s 1.9s; }
+.paper-back { position:absolute; inset:0; background:linear-gradient(45deg,transparent 49.7%,rgba(128,87,79,.12) 50%,transparent 50.3%),linear-gradient(-45deg,transparent 49.7%,rgba(128,87,79,.12) 50%,transparent 50.3%),radial-gradient(circle at 35% 25%,#fff8f7 0 2px,transparent 3px),#f3e3e3; background-size:auto,auto,21px 21px; }
+.opening-flap { position:absolute; top:0; bottom:0; width:55%; background:rgba(245,228,228,.82); transition:transform 1.45s cubic-bezier(.65,0,.35,1),opacity .35s 1.15s; will-change:transform; }
+.opening-left { left:0; clip-path:polygon(0 0,100% 50%,0 100%); }
+.opening-right { right:0; clip-path:polygon(100% 0,0 50%,100% 100%); }
+.seal-button { position:relative; z-index:2; border:0; background:none; color:#8e6962; display:flex; flex-direction:column; align-items:center; gap:10px; font-size:24px; cursor:pointer; transition:opacity .3s,transform .55s cubic-bezier(.34,1.56,.64,1); }
+.wax-seal { display:block; width:190px; height:190px; object-fit:contain; filter:drop-shadow(0 4px 4px #60331955); }
+.bismillah-seal { width:205px; height:205px; }
+.realistic-seal { clip-path:circle(42% at 50% 50%); transform:scale(1.17); }
+.opening.open .seal-button { opacity:0; transform:scale(.82); pointer-events:none; }
+.opening.open .paper-back { opacity:0; transition:opacity .35s .85s; }
+.opening.open .opening-left { transform:translateX(-110%); opacity:0; }
+.opening.open .opening-right { transform:translateX(110%); opacity:0; }
+.opening.open { opacity:0; visibility:hidden; }
+main { max-width:720px; margin:auto; background:var(--rose-light); box-shadow:0 0 40px #4a211833; overflow:hidden; }
+.palace-hero { position:relative; height:100svh; min-height:720px; display:grid; place-items:center; background:url("/assets/moroccan-curtain-hero.png") center/cover no-repeat; }
+.palace-hero:after { content:""; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 38%,rgba(245,210,209,.12) 58%,rgba(238,209,208,.42)); }
+.hero-copy { position:relative; z-index:1; text-align:center; margin-top:18%; text-shadow:0 1px 2px #fff6; transition:opacity .8s .45s,transform 1s .35s; }
+body.locked .hero-copy { opacity:0; transform:translateY(20px); }
+.eyebrow { font-size:20px; font-style:italic; margin:0 0 15px; }
+h1,h2 { font-family:"Imperial Script",cursive; font-weight:400; }
+h1 { font-size:74px; line-height:.63; margin:0; }
+h1 em { display:inline-block; font-size:35px; padding:14px 0 12px; font-weight:400; }
+.hero-date { font-size:27px; line-height:1.15; margin:10px 0; }
+.hero-date small { font-size:17px; }
+.section-pad { padding:90px 28px; }
+.ornament { display:flex; align-items:center; justify-content:center; gap:8px; margin:18px auto; color:var(--gold); width:min(250px,75%); }
+.ornament span { height:1px; flex:1; background:linear-gradient(90deg,transparent,var(--gold)); }
+.ornament span:last-child { background:linear-gradient(90deg,var(--gold),transparent); }
+.ornament b { font-weight:400; font-size:13px; }
+.invitation-section { background:radial-gradient(circle at 50% 30%,#fcebea,#f0d1d0); }
+.arch-card { position:relative; max-width:530px; min-height:820px; margin:auto; padding:95px 45px 55px; text-align:center; border:2px solid #ae7c62; border-radius:48% 48% 7px 7px/18% 18% 7px 7px; box-shadow:inset 0 0 0 7px #f3d8d5,inset 0 0 0 9px #b98e79,0 14px 40px #86534a22; background:linear-gradient(#f9e5e2,#edc9c7); }
+.arch-card:before { content:""; position:absolute; inset:15px; border:1px solid #bc8f79; border-radius:48% 48% 3px 3px/17% 17% 3px 3px; pointer-events:none; }
+.arabic-bismillah { position:relative; z-index:1; font-family:"Amiri",serif; font-size:34px; line-height:1.4; }
+.arabic-bismillah.small { font-size:25px; }
+.arabic-copy { font-family:"Amiri",serif; font-size:25px; line-height:1.9; margin:30px 0; }
+.invite-copy,.event-details { font-size:21px; line-height:1.5; }
+.arch-card h2 { font-size:60px; margin:20px 0 10px; }
+.arch-card h3 { font:42px "Imperial Script",cursive; margin:15px 0 0; }
+.arch-card p:last-child { margin-top:4px; font-size:20px; }
+.countdown-section { min-height:620px; display:flex; flex-direction:column; justify-content:center; text-align:center; background:linear-gradient(#f5dedd,#f1cfce); }
+.countdown-section h2,.programme h2,.rsvp h2 { font-size:55px; margin:0; }
+.countdown { display:grid; grid-template-columns:repeat(4,1fr); max-width:570px; margin:40px auto 20px; }
+.countdown div { display:flex; flex-direction:column; padding:0 7px; border-right:1px solid #b88a7c77; }
+.countdown div:last-child { border:0; }
+.countdown strong { font-size:48px; font-weight:400; line-height:1; }
+.countdown span { margin-top:10px; text-transform:capitalize; font-size:17px; }
+.section-note { font-style:italic; font-size:21px; }
+.venue-section { height:850px; position:relative; display:flex; justify-content:center; align-items:flex-start; background:url("/assets/moroccan-palace-venue.png") center bottom/cover no-repeat; }
+.venue-section:before { content:""; position:absolute; inset:0; background:linear-gradient(to bottom,#f7dfde 0%,rgba(247,223,222,.93) 28%,transparent 72%); }
+.venue-overlay { position:relative; z-index:1; text-align:center; padding-top:70px; }
+.venue-overlay .eyebrow { font:50px "Imperial Script",cursive; }
+.map-pin { width:44px; height:54px; display:grid; place-items:center; margin:20px auto; color:#f5dfd4; font-size:25px; border-radius:50% 50% 50% 0; transform:rotate(-45deg); background:#a47745; }
+.venue-overlay h2 { font-size:58px; margin:0; }
+.venue-overlay p { font-size:23px; margin:2px; }
+.venue-overlay a { display:inline-block; color:var(--brown); border:1px solid #996c58; border-radius:30px; padding:10px 24px; margin-top:20px; text-decoration:none; }
+.map-section { padding:18px; background:#f6dddc; }
+.map-section iframe { display:block; width:100%; height:420px; border:1px solid #ad7f7066; border-radius:18px; filter:sepia(.22) saturate(.75); }
+.programme { text-align:center; background:#f6dddc; }
+.reception-only { min-height:420px; display:flex; flex-direction:column; justify-content:center; }
+.reception-time { display:block; font-size:82px; font-weight:400; line-height:1; }
+.reception-only p { font-size:24px; margin:18px 0 0; }
+.programme-grid { max-width:500px; margin:40px auto 0; display:grid; gap:0; }
+.programme-grid div { display:grid; grid-template-columns:100px 1fr; align-items:center; border-bottom:1px solid #ad7f7066; padding:22px; text-align:left; }
+.programme-grid strong { font-size:26px; font-weight:400; }
+.programme-grid span { font-size:21px; }
+.family { min-height:570px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; background:linear-gradient(#edcbca,#f7e2e0); }
+.family h2 { font-size:58px; margin:0; }
+.family h3 { font:52px "Imperial Script",cursive; margin:22px 0 0; }
+.family-role { margin:0 0 25px; font-size:19px; font-style:italic; }
+.family-names { font-size:24px; line-height:1.8; margin:0; }
+.family-names i { color:var(--gold); font-style:normal; padding:0 7px; }
+.rsvp { min-height:650px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; background:radial-gradient(circle,#fae8e6,#edcbca); }
+.rsvp p { font-size:20px; line-height:1.5; }
+.rsvp button { border:1px solid #9c6c58; min-width:160px; padding:12px 30px; margin:25px; color:var(--brown); background:transparent; border-radius:30px; font-size:21px; cursor:pointer; }
+.rsvp-message { opacity:0; height:0; transition:.5s; }
+.rsvp-message.show { opacity:1; height:auto; }
+.rsvp-form { width:min(430px,100%); display:grid; gap:18px; margin-top:25px; }
+.rsvp-form label { display:grid; gap:7px; text-align:left; font-size:18px; }
+.rsvp-form input,.rsvp-form select { width:100%; border:1px solid #b78b7c; border-radius:8px; padding:13px 14px; color:var(--brown); background:#fff8f766; font:18px "Cormorant Garamond",serif; outline:none; }
+.rsvp-form input:focus,.rsvp-form select:focus { border-color:#875c4c; box-shadow:0 0 0 3px #a6755c22; }
+.rsvp-form button { margin:8px auto 0; }
+.closing { height:650px; display:grid; place-items:center; text-align:center; position:relative; background:url("/assets/moroccan-curtain-hero.png") center bottom/cover no-repeat; }
+.closing:before { content:""; position:absolute; inset:0; background:#edcdccaa; }
+.closing div { position:relative; }
+.closing h2 { font-size:66px; margin:0; }
+.closing p { font-size:28px; margin:5px; }
+.music { position:fixed; z-index:20; right:24px; bottom:24px; width:62px; height:62px; border:0; border-radius:50%; color:#f5dfd9; font-size:25px; background:#79755d; box-shadow:0 4px 13px #0003; cursor:pointer; }
+.youtube-player { position:fixed; width:1px; height:1px; opacity:0; pointer-events:none; left:-10px; bottom:-10px; border:0; }
+.reveal { opacity:0; transform:translateY(42px); transition:opacity 1.2s,transform 1.2s; }
+.reveal.visible { opacity:1; transform:none; }
+@media(max-width:600px){
+  .palace-hero{min-height:690px;background-position:center}
+  .hero-copy{margin-top:25%} h1{font-size:64px}.hero-date{font-size:23px}
+  .section-pad{padding:70px 18px}.arch-card{padding:80px 25px 45px;min-height:750px;border-radius:48% 48% 7px 7px/14% 14% 7px 7px}
+  .arabic-bismillah{font-size:28px}.arabic-copy{font-size:21px;line-height:1.7}.arch-card h2{font-size:52px}
+  .countdown{width:100%}.countdown strong{font-size:35px}.countdown span{font-size:13px}
+  .venue-section{height:760px}.programme-grid div{grid-template-columns:85px 1fr;padding:18px 10px}
+  .music{width:58px;height:58px;right:18px;bottom:18px}
+}
