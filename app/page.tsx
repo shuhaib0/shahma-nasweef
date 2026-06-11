@@ -69,6 +69,8 @@ export default function Home() {
 
     <main>
       <section className="palace-hero">
+        <div className="hero-scene" aria-hidden="true" />
+        <div className="chandelier-glow" aria-hidden="true" />
         <div className="hero-copy reveal">
           <p className="eyebrow">Together with their families</p>
           <h1>Mufeed<br /><em>&</em><br />Fahiza</h1>

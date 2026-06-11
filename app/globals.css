@@ -20,9 +20,11 @@ button { font:inherit; }
 .opening.open .opening-right { transform:translateX(110%); opacity:0; }
 .opening.open { opacity:0; visibility:hidden; }
 main { max-width:720px; margin:auto; background:var(--rose-light); box-shadow:0 0 40px #4a211833; overflow:hidden; }
-.palace-hero { position:relative; height:100svh; min-height:720px; display:grid; place-items:center; background:url("/assets/moroccan-curtain-hero.png") center/cover no-repeat; }
+.palace-hero { position:relative; height:100svh; min-height:720px; display:grid; place-items:center; overflow:hidden; background:#e9c3bd; }
+.hero-scene { position:absolute; inset:-3%; background:url("/assets/moroccan-curtain-hero.png") center/cover no-repeat; transform-origin:50% 28%; animation:ceremonialPush 16s ease-in-out infinite alternate; will-change:transform; }
 .palace-hero:after { content:""; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 38%,rgba(245,210,209,.12) 58%,rgba(238,209,208,.42)); }
-.hero-copy { position:relative; z-index:1; text-align:center; margin-top:18%; text-shadow:0 1px 2px #fff6; transition:opacity .8s .45s,transform 1s .35s; }
+.chandelier-glow { position:absolute; z-index:1; top:-5%; left:50%; width:72%; aspect-ratio:1; transform:translateX(-50%); border-radius:50%; background:radial-gradient(circle,rgba(255,239,194,.28),rgba(255,223,177,.08) 38%,transparent 68%); mix-blend-mode:screen; animation:chandelierGlow 4.8s ease-in-out infinite; pointer-events:none; }
+.hero-copy { position:relative; z-index:2; text-align:center; margin-top:18%; text-shadow:0 1px 2px #fff6; transition:opacity .8s .45s,transform 1s .35s; animation:heroFloat 6s ease-in-out 2s infinite; }
 body.locked .hero-copy { opacity:0; transform:translateY(20px); }
 .eyebrow { font-size:20px; font-style:italic; margin:0 0 15px; }
 h1,h2 { font-family:"Imperial Script",cursive; font-weight:400; }
@@ -96,8 +98,25 @@ h1 em { display:inline-block; font-size:35px; padding:14px 0 12px; font-weight:4
 .youtube-player { position:fixed; width:1px; height:1px; opacity:0; pointer-events:none; left:-10px; bottom:-10px; border:0; }
 .reveal { opacity:0; transform:translateY(42px); transition:opacity 1.2s,transform 1.2s; }
 .reveal.visible { opacity:1; transform:none; }
+@keyframes ceremonialPush {
+  0% { transform:scale(1.015) translate3d(0,0,0); }
+  48% { transform:scale(1.055) translate3d(0,1%,0); }
+  100% { transform:scale(1.035) translate3d(0,-.5%,0); }
+}
+@keyframes chandelierGlow {
+  0%,100% { opacity:.45; transform:translateX(-50%) scale(.94); }
+  50% { opacity:.9; transform:translateX(-50%) scale(1.08); }
+}
+@keyframes heroFloat {
+  0%,100% { translate:0 0; }
+  50% { translate:0 -6px; }
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-scene,.chandelier-glow,.hero-copy { animation:none; }
+  .opening-flap,.seal-button,.opening,.reveal { transition-duration:.01ms; }
+}
 @media(max-width:600px){
-  .palace-hero{min-height:690px;background-position:center}
+  .palace-hero{min-height:690px}
   .hero-copy{margin-top:25%} h1{font-size:64px}.hero-date{font-size:23px}
   .section-pad{padding:70px 18px}.arch-card{padding:80px 25px 45px;min-height:750px;border-radius:48% 48% 7px 7px/14% 14% 7px 7px}
   .arabic-bismillah{font-size:28px}.arabic-copy{font-size:21px;line-height:1.7}.arch-card h2{font-size:52px}
