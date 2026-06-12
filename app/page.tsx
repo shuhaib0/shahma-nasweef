@@ -34,7 +34,8 @@ export default function Home() {
   const [musicPlaying, setMusicPlaying] = useState(false);
   const [rsvp, setRsvp] = useState(false);
   const [guestName, setGuestName] = useState("");
-  const [guestCount, setGuestCount] = useState("1");
+  const [guestCount, setGuestCount] = useState(1);
+  const [rsvpStatus, setRsvpStatus] = useState<"idle" | "saving" | "error">("idle");
   const player = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
@@ -55,6 +56,22 @@ export default function Home() {
     const command = musicPlaying ? "pauseVideo" : "playVideo";
     player.current?.contentWindow?.postMessage(JSON.stringify({ event: "command", func: command, args: [] }), "*");
     setMusicPlaying(!musicPlaying);
+  };
+  const submitRsvp = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setRsvpStatus("saving");
+    setRsvp(false);
+    const response = await fetch("/api/rsvps", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ guestName: guestName.trim(), guestCount }),
+    });
+    if (!response.ok) {
+      setRsvpStatus("error");
+      return;
+    }
+    setRsvpStatus("idle");
+    setRsvp(true);
   };
 
   return <>
@@ -148,12 +165,19 @@ export default function Home() {
         <h2>Kindly Reply</h2>
         <Ornament />
         <p>Your presence will make our celebration complete.<br />Please join us on 10 August 2026.</p>
-        <form className="rsvp-form" onSubmit={event => { event.preventDefault(); setRsvp(true); }}>
+        <form className="rsvp-form" onSubmit={submitRsvp}>
           <label>Guest name<input required value={guestName} onChange={event => setGuestName(event.target.value)} placeholder="Your full name" /></label>
-          <label>Number of guests<select value={guestCount} onChange={event => setGuestCount(event.target.value)}>{[1,2,3,4,5,6,7,8,9,10].map(count => <option key={count} value={count}>{count}</option>)}</select></label>
-          <button type="submit">Confirm Attendance</button>
+          <label>Number of guests
+            <span className="guest-stepper">
+              <button type="button" aria-label="Decrease guest count" onClick={() => setGuestCount(count => Math.max(1, count - 1))}>−</button>
+              <strong aria-live="polite">{guestCount}</strong>
+              <button type="button" aria-label="Increase guest count" onClick={() => setGuestCount(count => Math.min(20, count + 1))}>+</button>
+            </span>
+          </label>
+          <button type="submit" disabled={rsvpStatus === "saving"}>{rsvpStatus === "saving" ? "Saving..." : "Confirm Attendance"}</button>
         </form>
-        <div className={`rsvp-message ${rsvp ? "show" : ""}`}>Thank you, {guestName}. Your RSVP for {guestCount} {guestCount === "1" ? "guest" : "guests"} is confirmed.</div>
+        {rsvpStatus === "error" && <div className="rsvp-error">We could not save your RSVP. Please try again.</div>}
+        <div className={`rsvp-message ${rsvp ? "show" : ""}`}>Thank you, {guestName}. Your RSVP for {guestCount} {guestCount === 1 ? "guest" : "guests"} is confirmed.</div>
       </section>
 
       <section className="closing reveal">
