@@ -77,11 +77,15 @@ export default function Home() {
   return <>
     <div className={`opening ${opened ? "open" : ""}`}>
       <div className="paper-back" />
+      <div className="opening-light" aria-hidden="true" />
       <button className="seal-button" onClick={open} aria-label="Open invitation">
         <img className="wax-seal bismillah-seal realistic-seal" src={`${A}bismillah-real-gold-seal.png`} alt="Bismillah" />
         <span>Click to open</span>
       </button>
-      <div className="opening-flap opening-left" /><div className="opening-flap opening-right" />
+      <div className="opening-flap opening-left" />
+      <div className="opening-flap opening-right" />
+      <div className="opening-flap opening-top" />
+      <div className="opening-flap opening-bottom" />
     </div>
 
     <main>
