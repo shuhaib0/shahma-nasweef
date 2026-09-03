@@ -3,7 +3,59 @@
 import { useEffect, useRef, useState } from "react";
 
 const A = "/assets/";
-const weddingDate = new Date("2026-08-10T16:00:00");
+const weddingDate = new Date("2026-09-27T16:00:00");
+
+const googleCalendarUrl =
+  "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+  "&text=" + encodeURIComponent("Wedding Reception · Shahma Sherin & Nasweef") +
+  "&dates=20260927T103000Z/20260927T143000Z" +
+  "&details=" + encodeURIComponent("Wedding reception celebration of Shahma Sherin and Nasweef.\n\nTime: 4:00 PM onwards\nVenue: Residence, Karupparammal Colony, Thamarassery\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7") +
+  "&location=" + encodeURIComponent("Residence, Karupparammal Colony, Thamarassery, Kerala 673573, India");
+
+function downloadIcs() {
+  const ics = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Shahma & Nasweef Wedding//EN",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    "BEGIN:VEVENT",
+    "UID:wedding-shahma-nasweef-20260927@wedding",
+    `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").split(".")[0]}Z`,
+    "DTSTART:20260927T103000Z",
+    "DTEND:20260927T143000Z",
+    "SUMMARY:Wedding Reception · Shahma Sherin & Nasweef",
+    "DESCRIPTION:Wedding reception celebration of Shahma Sherin and Nasweef.\\n\\nTime: 4:00 PM onwards\\nVenue: Residence\\, Karupparammal Colony\\, Thamarassery\\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7",
+    "LOCATION:Residence\\, Karupparammal Colony\\, Thamarassery\\, Kerala 673573",
+    "STATUS:CONFIRMED",
+    "END:VEVENT",
+    "END:VCALENDAR"
+  ].join("\r\n");
+
+  const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.setAttribute("download", "shahma-nasweef-wedding.ics");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+
+function handleSaveToCalendar() {
+  const userAgent = typeof navigator !== "undefined" ? navigator.userAgent || "" : "";
+  const platform = typeof navigator !== "undefined" ? (navigator as any).userAgentData?.platform || navigator.platform || "" : "";
+  
+  const isIOS = /iPad|iPhone|iPod/.test(userAgent) || (platform === "MacIntel" && typeof navigator !== "undefined" && navigator.maxTouchPoints > 1);
+  const isApple = isIOS || /Macintosh|MacIntel/.test(platform);
+
+  if (isApple) {
+    downloadIcs();
+  } else {
+    window.open(googleCalendarUrl, "_blank", "noopener,noreferrer");
+  }
+}
 
 function Ornament() {
   return <div className="ornament"><span /><b>✦</b><span /></div>;
@@ -32,10 +84,6 @@ function Countdown() {
 export default function Home() {
   const [opened, setOpened] = useState(false);
   const [musicPlaying, setMusicPlaying] = useState(false);
-  const [rsvp, setRsvp] = useState(false);
-  const [guestName, setGuestName] = useState("");
-  const [guestCount, setGuestCount] = useState(1);
-  const [rsvpStatus, setRsvpStatus] = useState<"idle" | "saving" | "error">("idle");
   const player = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
@@ -56,22 +104,6 @@ export default function Home() {
     const command = musicPlaying ? "pauseVideo" : "playVideo";
     player.current?.contentWindow?.postMessage(JSON.stringify({ event: "command", func: command, args: [] }), "*");
     setMusicPlaying(!musicPlaying);
-  };
-  const submitRsvp = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setRsvpStatus("saving");
-    setRsvp(false);
-    const response = await fetch("/api/rsvps", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ guestName: guestName.trim(), guestCount }),
-    });
-    if (!response.ok) {
-      setRsvpStatus("error");
-      return;
-    }
-    setRsvpStatus("idle");
-    setRsvp(true);
   };
 
   return <>
@@ -94,9 +126,9 @@ export default function Home() {
         <div className="chandelier-glow" aria-hidden="true" />
         <div className="hero-copy reveal">
           <p className="eyebrow">Together with their families</p>
-          <h1>Mufeed<br /><em>&</em><br />Fahiza</h1>
+          <h1>Shahma Sherin<br /><em>&</em><br />Nasweef</h1>
           <Ornament />
-          <p className="hero-date">10 August 2026<br /><small>Reception at 4 o&apos;clock in the afternoon</small></p>
+          <p className="hero-date">27 September 2026<br /><small>Reception at 4 o&apos;clock in the afternoon</small></p>
         </div>
       </section>
 
@@ -113,11 +145,11 @@ export default function Home() {
             With joyful hearts, we invite you<br />
             to celebrate the wedding reception of
           </p>
-          <h2>Mufeed & Fahiza</h2>
-          <p className="event-details">Monday, 10 August 2026<br />Reception at four o&apos;clock in the afternoon</p>
+          <h2>Shahma Sherin & Nasweef</h2>
+          <p className="event-details">Sunday, 27 September 2026<br />Reception at four o&apos;clock in the afternoon</p>
           <Ornament />
-          <h3>Orlando City Convention Centre</h3>
-          <p>Komarappady</p>
+          <h3>Residence</h3>
+          <p>Karupparammal Colony, Thamarassery</p>
         </div>
       </section>
 
@@ -133,16 +165,16 @@ export default function Home() {
           <p className="eyebrow">Lieu</p>
           <Ornament />
           <div className="map-pin">♡</div>
-          <h2>Orlando City<br />Convention Centre</h2>
-          <p>Komarappady</p>
-          <a href="https://share.google/LTTzfqQvZbkdqCUeQ" target="_blank" rel="noreferrer">Open in Google Maps</a>
+          <h2>Residence</h2>
+          <p>Karupparammal Colony, Thamarassery</p>
+          <a href="https://maps.app.goo.gl/UAxrwVX167pr1A7j7" target="_blank" rel="noreferrer">Open in Google Maps</a>
         </div>
       </section>
 
       <section className="map-section reveal">
         <iframe
-          title="Orlando City Convention Centre map"
-          src="https://www.google.com/maps?q=Orlando%20City%20Convention%20Centre%20Komarappady&output=embed"
+          title="Wedding location map"
+          src="https://maps.google.com/maps?q=11.410288,75.91671&z=16&output=embed"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
@@ -152,7 +184,7 @@ export default function Home() {
         <h2>Reception</h2>
         <Ornament />
         <strong className="reception-time">4 PM</strong>
-        <p>Monday, 10 August 2026</p>
+        <p>Sunday, 27 September 2026</p>
       </section>
 
       <section className="family section-pad reveal">
@@ -164,28 +196,27 @@ export default function Home() {
         <p className="family-names">Navaf <i>•</i> Fahad <i>•</i> Jameela<br />Ramna <i>•</i> Sheheera</p>
       </section>
 
-      <section className="rsvp section-pad reveal">
+      <section className="rsvp save-the-date-section section-pad reveal">
         <p className="arabic-bismillah small">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا</p>
-        <h2>Kindly Reply</h2>
+        <h2>Save the Date</h2>
         <Ornament />
-        <p>Your presence will make our celebration complete.<br />Please join us on 10 August 2026.</p>
-        <form className="rsvp-form" onSubmit={submitRsvp}>
-          <label>Guest name<input required value={guestName} onChange={event => setGuestName(event.target.value)} placeholder="Your full name" /></label>
-          <label>Number of guests
-            <span className="guest-stepper">
-              <button type="button" aria-label="Decrease guest count" onClick={() => setGuestCount(count => Math.max(1, count - 1))}>−</button>
-              <strong aria-live="polite">{guestCount}</strong>
-              <button type="button" aria-label="Increase guest count" onClick={() => setGuestCount(count => Math.min(20, count + 1))}>+</button>
-            </span>
-          </label>
-          <button type="submit" disabled={rsvpStatus === "saving"}>{rsvpStatus === "saving" ? "Saving..." : "Confirm Attendance"}</button>
-        </form>
-        {rsvpStatus === "error" && <div className="rsvp-error">We could not save your RSVP. Please try again.</div>}
-        <div className={`rsvp-message ${rsvp ? "show" : ""}`}>Thank you, {guestName}. Your RSVP for {guestCount} {guestCount === 1 ? "guest" : "guests"} is confirmed.</div>
+        <p>Your presence will make our celebration complete.<br />Please join us on 27 September 2026.</p>
+        <div className="calendar-actions">
+          <button
+            type="button"
+            onClick={handleSaveToCalendar}
+            className="calendar-btn"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z" />
+            </svg>
+            <span>Save to Calendar</span>
+          </button>
+        </div>
       </section>
 
       <section className="closing reveal">
-        <div><h2>With Love</h2><p>Mufeed & Fahiza</p><Ornament /></div>
+        <div><h2>With Love</h2><p>Shahma & Nasweef</p><Ornament /></div>
       </section>
     </main>
 

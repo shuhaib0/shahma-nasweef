@@ -48,8 +48,8 @@ export default function Dashboard() {
     <main className="dashboard">
       <header className="dashboard-header">
         <p>Wedding Reception Dashboard</p>
-        <h1>Mufeed & Fahiza</h1>
-        <span>10 August 2026 · Orlando City Convention Centre</span>
+        <h1>Shahma & Nasweef</h1>
+        <span>27 September 2026 · Residence, Thamarassery</span>
       </header>
 
       <section className="dashboard-content">

@@ -1,6 +1,6 @@
-# Template 6 Replica
+# Shahma & Nasweef Wedding Invitation
 
-Next.js implementation of the interactive wedding invitation.
+Next.js interactive wedding invitation for Shahma Sherin and Nasweef.
 
 ```sh
 npm install
