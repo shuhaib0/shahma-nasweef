@@ -188,12 +188,12 @@ export default function Home() {
       </section>
 
       <section className="family section-pad reveal">
-        <p className="eyebrow">With the blessings of</p>
+        <p className="eyebrow">With best wishes from</p>
         <h2>Our Family</h2>
         <Ornament />
-        <h3>Musthafa</h3>
-        <p className="family-role">Father</p>
-        <p className="family-names">Navaf <i>•</i> Fahad <i>•</i> Jameela<br />Ramna <i>•</i> Sheheera</p>
+        <p className="family-names" style={{ marginTop: "28px", fontSize: "28px" }}>
+          Shadi <i>•</i> Sahla <i>•</i> Samad <i>•</i> Sakeena
+        </p>
       </section>
 
       <section className="rsvp save-the-date-section section-pad reveal">
