@@ -9,8 +9,8 @@ const googleCalendarUrl =
   "https://calendar.google.com/calendar/render?action=TEMPLATE" +
   "&text=" + encodeURIComponent("Wedding Reception · Shahma Sherin & Nasweef") +
   "&dates=20260927T063000Z/20260927T103000Z" +
-  "&details=" + encodeURIComponent("Wedding reception celebration of Shahma Sherin and Nasweef.\n\nTime: 12:00 PM onwards\nVenue: Residence, Karupparammal Colony, Thamarassery\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7") +
-  "&location=" + encodeURIComponent("Residence, Karupparammal Colony, Thamarassery, Kerala 673573, India");
+  "&details=" + encodeURIComponent("Wedding reception celebration of Shahma Sherin and Nasweef.\n\nTime: 12:00 PM onwards\nVenue: Residence, Purayil (H) Earpona, Thamarassery\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7") +
+  "&location=" + encodeURIComponent("Residence, Purayil (H) Earpona, Thamarassery, Kerala 673573, India");
 
 function downloadIcs() {
   const ics = [
@@ -25,8 +25,8 @@ function downloadIcs() {
     "DTSTART:20260927T063000Z",
     "DTEND:20260927T103000Z",
     "SUMMARY:Wedding Reception · Shahma Sherin & Nasweef",
-    "DESCRIPTION:Wedding reception celebration of Shahma Sherin and Nasweef.\\n\\nTime: 12:00 PM onwards\\nVenue: Residence\\, Karupparammal Colony\\, Thamarassery\\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7",
-    "LOCATION:Residence\\, Karupparammal Colony\\, Thamarassery\\, Kerala 673573",
+    "DESCRIPTION:Wedding reception celebration of Shahma Sherin and Nasweef.\\n\\nTime: 12:00 PM onwards\\nVenue: Purayil (H) Earpona\\, Thamarassery\\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7",
+    "LOCATION:Purayil (H) Earpona\\, Thamarassery\\, Kerala 673573",
     "STATUS:CONFIRMED",
     "END:VEVENT",
     "END:VCALENDAR"
@@ -149,7 +149,7 @@ export default function Home() {
           <p className="event-details">Sunday, 27 September 2026<br />Reception at twelve o&apos;clock in the afternoon</p>
           <Ornament />
           <h3>Residence</h3>
-          <p>Karupparammal Colony, Thamarassery</p>
+          <p>Purayil (H) Earpona, Thamarassery</p>
         </div>
       </section>
 
@@ -166,7 +166,7 @@ export default function Home() {
           <Ornament />
           <div className="map-pin">♡</div>
           <h2>Residence</h2>
-          <p>Karupparammal Colony, Thamarassery</p>
+          <p>Purayil (H) Earpona, Thamarassery</p>
           <a href="https://maps.app.goo.gl/UAxrwVX167pr1A7j7" target="_blank" rel="noreferrer">Open in Google Maps</a>
         </div>
       </section>
