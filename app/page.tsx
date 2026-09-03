@@ -3,13 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 
 const A = "/assets/";
-const weddingDate = new Date("2026-09-27T16:00:00");
+const weddingDate = new Date("2026-09-27T12:00:00");
 
 const googleCalendarUrl =
   "https://calendar.google.com/calendar/render?action=TEMPLATE" +
   "&text=" + encodeURIComponent("Wedding Reception · Shahma Sherin & Nasweef") +
-  "&dates=20260927T103000Z/20260927T143000Z" +
-  "&details=" + encodeURIComponent("Wedding reception celebration of Shahma Sherin and Nasweef.\n\nTime: 4:00 PM onwards\nVenue: Residence, Karupparammal Colony, Thamarassery\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7") +
+  "&dates=20260927T063000Z/20260927T103000Z" +
+  "&details=" + encodeURIComponent("Wedding reception celebration of Shahma Sherin and Nasweef.\n\nTime: 12:00 PM onwards\nVenue: Residence, Karupparammal Colony, Thamarassery\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7") +
   "&location=" + encodeURIComponent("Residence, Karupparammal Colony, Thamarassery, Kerala 673573, India");
 
 function downloadIcs() {
@@ -22,10 +22,10 @@ function downloadIcs() {
     "BEGIN:VEVENT",
     "UID:wedding-shahma-nasweef-20260927@wedding",
     `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").split(".")[0]}Z`,
-    "DTSTART:20260927T103000Z",
-    "DTEND:20260927T143000Z",
+    "DTSTART:20260927T063000Z",
+    "DTEND:20260927T103000Z",
     "SUMMARY:Wedding Reception · Shahma Sherin & Nasweef",
-    "DESCRIPTION:Wedding reception celebration of Shahma Sherin and Nasweef.\\n\\nTime: 4:00 PM onwards\\nVenue: Residence\\, Karupparammal Colony\\, Thamarassery\\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7",
+    "DESCRIPTION:Wedding reception celebration of Shahma Sherin and Nasweef.\\n\\nTime: 12:00 PM onwards\\nVenue: Residence\\, Karupparammal Colony\\, Thamarassery\\nGoogle Maps: https://maps.app.goo.gl/UAxrwVX167pr1A7j7",
     "LOCATION:Residence\\, Karupparammal Colony\\, Thamarassery\\, Kerala 673573",
     "STATUS:CONFIRMED",
     "END:VEVENT",
@@ -128,7 +128,7 @@ export default function Home() {
           <p className="eyebrow">Together with their families</p>
           <h1>Shahma Sherin<br /><em>&</em><br />Nasweef</h1>
           <Ornament />
-          <p className="hero-date">27 September 2026<br /><small>Reception at 4 o&apos;clock in the afternoon</small></p>
+          <p className="hero-date">27 September 2026<br /><small>Reception at 12 o&apos;clock in the afternoon</small></p>
         </div>
       </section>
 
@@ -146,7 +146,7 @@ export default function Home() {
             to celebrate the wedding reception of
           </p>
           <h2>Shahma Sherin & Nasweef</h2>
-          <p className="event-details">Sunday, 27 September 2026<br />Reception at four o&apos;clock in the afternoon</p>
+          <p className="event-details">Sunday, 27 September 2026<br />Reception at twelve o&apos;clock in the afternoon</p>
           <Ornament />
           <h3>Residence</h3>
           <p>Karupparammal Colony, Thamarassery</p>
@@ -183,7 +183,7 @@ export default function Home() {
       <section className="programme reception-only section-pad reveal">
         <h2>Reception</h2>
         <Ornament />
-        <strong className="reception-time">4 PM</strong>
+        <strong className="reception-time">12 PM</strong>
         <p>Sunday, 27 September 2026</p>
       </section>
 
