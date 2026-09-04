@@ -192,7 +192,7 @@ export default function Home() {
         <h2>Our Family</h2>
         <Ornament />
         <p className="family-names" style={{ marginTop: "28px", fontSize: "28px" }}>
-          Shadi <i>•</i> Sahla <i>•</i> Samad <i>•</i> Sakeena
+          Shadi <i>•</i> Sahla <i>•</i> Samad <i>•</i> Sakeena<br />Shafeeq <i>•</i> Azim <i>•</i> Hanfa <i>•</i> Aimen
         </p>
       </section>
 
